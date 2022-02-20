@@ -61,7 +61,7 @@ Market events emerged during the year of 2020 that many companies found difficul
 - Set up the Google search data for a Prophet forecasting model. After estimating the model, plot the forecast to understand the near-term forecast for the popularity of MercadoLibre.
 - Plot the individual time series components of the model to understand hourly, weekly, and yearly trend for the google traffic.
 
-* Predictions for 80 days:
+### Predictions for 80 days:
 
 ![](Images/forecast_prophet.png)
 
@@ -85,6 +85,8 @@ MercadoLibre has the lowest search traffic in October month of the year.
 - Produce a sales forecast with the most likely, best- and worst-case scenarios.
 
 ![](Images/daily_sales.png)
+
+### Revenue forecast:
 
 ![](Images/trend_3.png)
 
