@@ -7,7 +7,7 @@ Analysis of time series data is to understand the trends in google search traffi
 
  Following steps were followed:
  
-### * 1: Find unusual patterns in hourly Google search traffic.
+###  1: Find unusual patterns in hourly Google search traffic.
 
 - Read and use google search data and focus on just the month of May 2020 by slicing. (During this month, MercadoLibre released its quarterly financial results.) Use hvPlot to visualize the results. Do any unusual patterns exist?
 
@@ -15,7 +15,7 @@ Analysis of time series data is to understand the trends in google search traffi
 
 `Observation:` The total search traffic for the month of May 2020 is 38181 whereas median monthly search traffic for the year was 35172.5. Thus, the Google search traffic increased by approx. 8% in May 2020 when MercadoLibre released its financial results.
 
-### * 2: Mine the search traffic data for seasonality
+###  2: Mine the search traffic data for seasonality
 (so that marketing efforts can be focussed around the times with most traffic)
 
 - Using above data, plot the average traffic by the day of the week and by the week of the year.
@@ -33,7 +33,7 @@ try to track and predict interest in the company and its platform for any time o
 Also, The traffic tends to increase during winter holiday period i.e. starts increasing from week 40 through week 52. However it is maximum in first 8 weeks or first 2 months of the year.
 
 
-### * 3: Relate the search traffic to stock price patterns.
+###  3: Relate the search traffic to stock price patterns.
 
 - Read in and plot the stock price data. 
 - Concatenate the stock price data to the search data in a single DataFrame.Slice the data to just the first half of 2020 (2020-01 to 2020-06 in the DataFrame), and then use hvPlot to plot and visualize the data to understand if they have a common trend.
@@ -55,13 +55,13 @@ There is negligible inverse relationship between lagged search and stock volatil
 
 Market events emerged during the year of 2020 that many companies found difficult. But, after the initial shock to global financial markets, new customers and revenue increased for e-commerce platforms.
 
-### * 4: Create a time series model with Prophet for forecast.
+###  4: Create a time series model with Prophet for forecast.
 
 - Produce a time series model that analyzes and forecasts patterns in the hourly search data. 
 - Set up the Google search data for a Prophet forecasting model. After estimating the model, plot the forecast to understand the near-term forecast for the popularity of MercadoLibre.
 - Plot the individual time series components of the model to understand hourly, weekly, and yearly trend for the google traffic.
 
-### Predictions for 80 days:
+###      Predictions for 80 days:
 
 ![](Images/forecast_prophet.png)
 
@@ -78,7 +78,7 @@ At around midnight MercadoLibre exhibits the most popularity.
 Tuesday seems to get the most search traffic in the week.
 MercadoLibre has the lowest search traffic in October month of the year.
 
-### * 5: Forecast revenue by using time series models for next quarter
+###  5: Forecast revenue by using time series models for next quarter
 
 - Read in the daily historical sales (revenue) figures, and then apply a Prophet model to the data.
 - Interpret the model output to identify any seasonal patterns in the company's revenue. 
@@ -86,7 +86,7 @@ MercadoLibre has the lowest search traffic in October month of the year.
 
 ![](Images/daily_sales.png)
 
-### Revenue forecast:
+###      Revenue forecast:
 
 ![](Images/trend_3.png)
 
